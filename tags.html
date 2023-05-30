@@ -10,6 +10,8 @@
     <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- font-awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -47,34 +49,283 @@
     <main class="page">
       <section class="tags-wrapper">
        <!-- single tag -->
-           <a href="tag-template.html" class="tag">
+           <!-- <a href="#collapseExample" class="tag text-center" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
              <h5>Non-Veg</h5>
-             <p>1 recipe</p>
+             <h6>1 recipe</h6>
            </a>
+           <section class="collapse" id="collapseExample">
+           <div class="container" data-aos="fade-up"
+           data-aos-anchor-placement="top-bottom">
+            <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:90vw;">
+              <h1>Images</h1>
+              <h1>Name</h1>
+              <h1>Price</h1>
+            </div>
+            <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+              <img  src="./assets/recipes/recipe-1.jpeg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+              <h5 style="padding-top:2em;padding-left:5em;">Carne Asada</h5>
+              <p style="padding-top:2em;">30.00$</p>
+            </div>
+            <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+              <img  src="./assets/recipes/recipe-2.jpeg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+              <h5 style="padding-top:2em; padding-left:5em;">Greek Ribs</h5>
+              <p style="padding-top:2em;">50.00$</p>
+            </div>
+            <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+              <img  src="./assets/recipes/recipe-3.jpeg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+              <h5 style="padding-top:2em;padding-left:5em;">Kalu Soup</h5>
+              <p style="padding-top:2em;">20.00$</p>
+            </div>
+           </div>
+          </section> -->
+
+
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item" style="margin-bottom: 2em;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Non-Veg
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">sl.no</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><img  src="./assets/recipes/recipe-1.jpeg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Keemaka</td>
+                        <td>50.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><img  src="./assets/recipes/recipe-2.jpeg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Greek Ribs</td>
+                        <td>100.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img  src="./assets/recipes/recipe-3.jpeg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Kalu Soup</td>
+                        <td>40.00$</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="accordion" id="accordionExample2">
+
+            <div class="accordion-item" style="margin-bottom: 2em;">
+              <h2 class="accordion-header " id="headingTwo" style="text-align: center;">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  BreakFast
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">sl.no</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><img  src="./assets/breakfast1.jpg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>All Items</td>
+                        <td>50.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><img  src="./assets/breakfast2.jpg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Rava-Idli</td>
+                        <td>10.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img  src="./assets/breakfast3.jpeg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Parata</td>
+                        <td>40.00$</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="accordion" id="accordionExample3">
+
+            <div class="accordion-item" style="margin-bottom: 2em;">
+              <h2 class="accordion-header " id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Meals
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">sl.no</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><img  src="./assets/full1.jpg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Western Thali</td>
+                        <td>150.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><img  src="./assets/full2.jpg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Southern Thali</td>
+                        <td>200.00$</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img  src="./assets/full4.jpg" alt="food" style="border-radius: 50%;width:7em;height:7em;cursor:pointer;" class="recipe1 img-fluid"></td>
+                        <td>Eastern Thali</td>
+                        <td>380.00$</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+           <!-- <section class="recipes-containe mt-0 collapse" id="collapseExample" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            
+           
+            <div class="recipes-lis image-container" style="margin-top:-2em;">
+            
+              <a href="single-recipe.html" class="recipe recipe1" ><img  src="./assets/recipes/recipe-1.jpeg" alt="food" class="img recipe-img ">
+              <h5>Carne Asada</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe2" ><img  class="img recipe-img " src="./assets/recipes/recipe-2.jpeg" alt="food" >
+              <h5>Greek Ribs</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe3" ><img src="./assets/recipes/recipe-3.jpeg" class="img recipe-img "alt="food">
+              <h5>Vegetable Soup</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe4" ><img src="./assets/recipes/recipe-4.jpeg" alt="food" class="img recipe-img ">
+              <h5>Banana Pancake</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe5" ><img  class="img recipe-img " src="./assets/recipes/recipe-2.jpeg" alt="food" >
+              <h5>Greek Ribs</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe6" ><img src="./assets/recipes/recipe-3.jpeg" class="img recipe-img"alt="food">
+              <h5>Vegetable Soup</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            </div>
+           
+          </section> -->
+
+
          <!-- end of single tag -->
        <!-- single tag -->
-           <a href="tag-template.html" class="tag">
+           <!-- <a href="#collapseExample1" class="tag text-center" data-bs-toggle="collapse">
              <h5>breakfast</h5>
-             <p>2 recipe</p>
-           </a>
+             <h6>2 recipe</h6>
+           </a> -->
+           <!-- <section class="recipes-containe mt-0 collapse" id="collapseExample1" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            
+           
+            <div class="recipes-lis image-container" style="margin-top:-2em;">
+            
+             <a href="single-recipe.html" class="recipe recipe1" ><img  src="./assets/breakfast1.jpg" alt="food" class="img recipe-img ">
+              <h5>Full Breakfast</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe2" ><img  class="img recipe-img " src="./assets/breakfast2.jpg" alt="food" >
+              <h5>Idli</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe3" ><img src="./assets/breakfast3.jpeg" class="img recipe-img "alt="food">
+              <h5>Parota</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe4" ><img src="./assets/breakfast4.jpg" alt="food" class="img recipe-img ">
+              <h5>Masala Dosa</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe5" ><img  class="img recipe-img " src="./assets/breakfast6.jpeg" alt="food" >
+              <h5>Maggi</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            <a href="single-recipe.html" class="recipe recipe6" ><img src="./assets/breakfast5.jpg" class="img recipe-img "alt="food">
+              <h5>Puri</h5>
+            <p>Prep : 15min | Cook : 5min</p></a>
+            </div>
+      
+          </section> -->
          <!-- end of single tag -->
        <!-- single tag -->
-           <a href="tag-template.html" class="tag">
+           <!-- <a href="tag-template.html" class="tag text-center">
              <h5>carrots</h5>
-             <p>3 recipe</p>
-           </a>
+             <h6>3 recipe</h6>
+           </a> -->
          <!-- end of single tag -->
        <!-- single tag -->
-           <a href="tag-template.html" class="tag">
+           <!-- <a href="#collapseExample4" class="tag text-center"  data-bs-toggle="collapse">
              <h5>dinner</h5>
-             <p>4 recipe</p>
-           </a>
+             <h6>4 recipe</h6>
+           </a> -->
+           <!-- <section class="collapse" id="collapseExample4">
+            <div class="container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+             <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:90vw;">
+               <h1>Images</h1>
+               <h1>Name</h1>
+               <h1>Price</h1>
+             </div>
+             <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+               <img  src="./assets/full1.jpg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+               <h5 style="padding-top:2em;padding-left:5em;">Full West Thali</h5>
+               <p style="padding-top:2em;">50.00$</p>
+             </div>
+             <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+               <img  src="./assets/full2.jpg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+               <h5 style="padding-top:2em; padding-left:5em;">Full South Thali</h5>
+               <p style="padding-top:2em;">100.00$</p>
+             </div>
+             <div class="row" style="display:grid;grid-template-columns:auto auto auto;width:75vw;margin-bottom: 1em;">
+               <img  src="./assets/full4.jpg" alt="food" style="border-radius: 50%;width:9em;height:9em;cursor:pointer;" class="recipe1">
+               <h5 style="padding-top:2em;padding-left:5em;">Full North Thali</h5>
+               <p style="padding-top:2em;">150.00$</p>
+             </div>
+            </div>
+           </section> -->
          <!-- end of single tag -->
        <!-- single tag -->
-           <a href="tag-template.html" class="tag">
+           <!-- <a href="tag-template.html" class="tag text-center">
              <h5>food</h5>
-             <p>1 recipe</p>
-           </a>
+             <h6>1 recipe</h6>
+           </a> -->
          <!-- end of single tag -->
      </section>
  </main>
@@ -85,5 +336,8 @@
       </span>Built By Soorya</p>
     </footer>
     <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   </body>
 </html>
